@@ -6,11 +6,11 @@ class TestCaseOne(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print('---每个测试类开始前运行一次---')
+        print('---每个测试类里，执行一次，在所有用例运行前执行---')
 
     @classmethod
     def tearDownClass(cls):
-        print('---每个测试类结束时运行一次---')
+        print('---每个测试类里，执行一次，在所有用例运行后执---')
 
     def test_case_one(self):
         print('--- 测试用例 1 ---')
