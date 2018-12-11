@@ -12,7 +12,7 @@ else:
 
 class SkipExample(unittest.TestCase):
 
-    @unittest.skip('用例 1 无条件跳过')
+    @unittest.skipIf(URL , '测试环境 无条件跳过')
     def test_case_one(self):
         print('---用例 1 ---')
 
