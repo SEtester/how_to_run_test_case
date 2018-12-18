@@ -2,11 +2,14 @@
 
 import unittest
 
+
 def setUpModule():
     print('--- 模块运行开始时 ，运行一次 ---')
 
+
 def tearDownModule():
     print('--- 模块运行结束时 ，运行一次 ---')
+
 
 class TestCaseOne(unittest.TestCase):
 
@@ -16,6 +19,7 @@ class TestCaseOne(unittest.TestCase):
     def test_case_two(self):
         print('--- 测试用例 2---')
 
+
 class TestCaseTwo(unittest.TestCase):
 
     def test_case_three(self):
@@ -23,8 +27,6 @@ class TestCaseTwo(unittest.TestCase):
 
     def test_case_four(self):
         print('--- 测试用例 4---')
-
-
 
 
 if __name__ == '__main__':

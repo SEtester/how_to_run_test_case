@@ -14,7 +14,7 @@ class TestEnv(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    @unittest.skipIf(URL != 'https://www.baidu.com' ,'不是百度首页的URL，跳过用例test_load_page')
+    @unittest.skipIf(URL != 'https://www.baidu.com', '不是百度首页的URL，跳过用例test_load_page')
     def test_load_page(self):
         self.driver.get(URL)
         sleep(10)
